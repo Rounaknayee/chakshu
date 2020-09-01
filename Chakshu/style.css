@@ -4,6 +4,25 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #485563;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #FFCEA2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #aa6c39;
+  }
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
@@ -43,7 +62,7 @@ p {
 }
 .section-title span {
 	color: #aa6c39;
-	/* color: crimson; */
+	/* color: #aa6c39; */
 }
 
 .cta {
@@ -69,7 +88,8 @@ p {
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	margin-left: 10px;
+	margin-left: 6px;
+	margin-bottom: 4px;
 	color: white;
 }
 .brand h1 span {
@@ -85,6 +105,8 @@ p {
 	width: 100vw;
 	height: auto;
 	background-color: rgba(41,50,60,0.5);
+	box-shadow:  0px 0px 18px 0 rgba(0, 0, 0, 0.2);
+	
 }
 #header .header {
 	min-height: 8vh;
@@ -176,7 +198,7 @@ p {
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color: white;
+	background-color: #aa6c39;
 	z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -186,7 +208,7 @@ p {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: white;
+	background-color: #aa6c39;
 	transition: .3s ease;
 	transition-property: top, bottom;
 }
@@ -297,7 +319,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
+	background-image: url(./img/img-1.jpg);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -448,7 +470,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 7px solid #aa6c39;
 	z-index: -1;
 }
 /* End About Section */
@@ -505,11 +527,20 @@ p {
 	flex-direction: column;
 	padding-top: 35px;
 	padding-bottom: 10px;
+	text-align: center;
 }
 
 #footer p {
 	color: white;
 	font-size: 1.3rem;
+}
+.fbrand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.fbrand h1 span {
+	color: #FFCEA2;
 }
 /* #footer h2 {
 	color: white;
@@ -630,7 +661,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid crimson;
+		border: 10px solid #aa6c39;
 	}
 	#about .col-right {
 		text-align: left;
