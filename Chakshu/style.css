@@ -292,6 +292,38 @@ p {
 
 /* End Hero Section */
 
+/* About Section */
+#about .about {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+	;
+}
+.aboutext{
+	display: flex;
+	text-align: justify;
+	justify-content: center;
+	flex-direction: column;
+	margin-block-start: 50px;
+	width: 80%;
+	font-weight: 500;
+	background: #29323c;
+	padding: 30px;
+	border-radius: 10px;
+	
+}
+.aboutext p{
+	color: whitesmoke;
+	font-size: large;
+}
+.aboutext p span{
+	color: #FFCEA2;
+	font-size: large;
+}
+/* End About section */
+
 /* Services Section */
 #services .services {
 	flex-direction: column;
@@ -402,6 +434,7 @@ p {
 }
 #projects .project-info p {
 	color: white;
+	text-align: justify;
 }
 #projects .project-img {
 	flex-basis: 50%;
@@ -427,43 +460,43 @@ p {
 }
 /* End Projects section */
 
-/* About Section */
-#about .about {
+/* archives Section */
+#archives .archives {
 	flex-direction: column-reverse;
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-#about .col-left {
+#archives .col-left {
 	width: 250px;
 	height: 360px;
 }
-#about .col-right {
+#archives .col-right {
 	width: 100%;
 }
-#about .col-right h2 {
+#archives .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: .2rem;
 	margin-bottom: 10px;
 }
-#about .col-right p {
+#archives .col-right p {
 	margin-bottom: 20px;
 }
-#about .col-right .cta {
+#archives .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
-#about .col-left .about-img {
+#archives .col-left .archives-img {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
 }
-#about .col-left .about-img::after {
+#archives .col-left .archives-img::after {
 	content: '';
 	position: absolute;
 	left: -33px;
@@ -473,7 +506,7 @@ p {
 	border: 7px solid #aa6c39;
 	z-index: -1;
 }
-/* End About Section */
+/* End archives Section */
 
 /* contact Section */
 #contact .contact {
@@ -511,10 +544,11 @@ p {
 	font-weight: 500;
 	margin-bottom: 5px;
 }
-#contact .contact-info h2 {
+#contact .contact-info h2 a{
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
+
 }
 /*End contact Section */
 
@@ -647,30 +681,30 @@ p {
 	}
 	/* End Project */
 
-	/* About */
-	#about .about {
+	/* archives */
+	#archives .archives {
 		flex-direction: row;
 	}
-	#about .col-left {
+	#archives .col-left {
 		width: 600px;
 		height: 400px;
 		padding-left: 60px;
 	}
-	#about .about .col-left .about-img::after {
+	#archives .archives .col-left .archives-img::after {
 		left: -45px;
 		top: 34px;
 		height: 98%;
 		width: 98%;
 		border: 10px solid #aa6c39;
 	}
-	#about .col-right {
+	#archives .col-right {
 		text-align: left;
 		padding: 30px;
 	}
-	#about .col-right h1 {
+	#archives .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
+	/* End archives */
 
 	/* contact  */
 	#contact .contact {
