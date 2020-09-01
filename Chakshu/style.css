@@ -543,11 +543,15 @@ p {
 	font-weight: 500;
 	margin-bottom: 5px;
 }
-#contact .contact-info h2 a{
-	font-size: 1.3rem;
+#contact .contact-info h2{
+	font-size: 1.5rem;
 	line-height: 2rem;
 	font-weight: 500;
-
+}
+#contact .contact-info h2 a{
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 500;
 }
 /*End contact Section */
 
@@ -564,6 +568,8 @@ p {
 }
 
 #footer p {
+	padding-left: 50px;
+	padding-right: 50px;
 	color: white;
 	font-size: 1.3rem;
 }
