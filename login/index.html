@@ -1,0 +1,86 @@
+<html>
+    <head>        
+        <meta charset="utf-8" />
+        <meta name="theme-color" content="#1d2951" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1d2951">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./auth.css">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <title>
+            Signi-In 
+        </title>
+        <noscript><h1> Please Enable Javascript </h1></noscript>
+    </head>
+    <body>
+        <div id="Login-Box">
+            <div id="left-box">
+                <button id="switch-theme-button" onclick="toggleTheme()" aria-hidden="true"></button>
+                <div class="toggle-box" aria-hidden="true">
+                    <div id="toggle" aria-hidden="true"></div>
+                    <button type="button" class="toggle-btn" onclick="login()" aria-hidden="true">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="signup()" aria-hidden="true">Sign Up</button>
+                </div>
+                <!-- <h1>Sign Up</h1> -->
+                <form id="login" class="form-input-group" method="POST">
+                    <!-- <input type="text"  name="username" placeholder="&#xf007; Username" autocomplete="off" > -->
+                    <input type="text" name="loginemail" placeholder="&#xf0e0; Email" autocomplete="email"/>
+                    <input type="text" name="loginpassword" placeholder="&#xf023; Password" autocomplete="off"/>
+                    <!-- <input type="text" name="password2" placeholder="&#xf023; Re-type Password" autocomplete="off"/> -->
+                    <input type="submit" name="login-button" value="Log In" aria-hidden="true"/>
+                </form>
+                <form id="signup" class="form-input-group" method="POST">
+                    <input type="text"  name="username" placeholder="&#xf007; Username" autocomplete="off" >
+                    <input type="text" name="email" placeholder="&#xf0e0; Email" autocomplete="email"/>
+                    <input type="text" name="password1" placeholder="&#xf023; Password" autocomplete="off"/>
+                    <input type="text" name="password2" placeholder="&#xf023; Re-type Password" autocomplete="off"/>
+                    <input type="submit" name="signup-button" value="Sign Up" aria-hidden="true"/>
+                </form>
+                
+            </div>
+            <div id="right-box">
+                <button class="social Google">Login with Google</button>
+                <button class="social Facebook">Login with Facebook</button>
+            </div>
+            <div id="or">or</div>
+        </div> 
+        <script type="text/javascript" src="./auth.js"></script>  
+        <!-- <script type="text/javascript" src="./three.r95.min.js"></script>
+        <script type="text/javascript" src="./vanta.net.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) { 
+                //do work
+                mobilecheck();
+
+            });
+            function mobilecheck() {     
+                var is_mobile = false;
+                // console.log(window.getComputedStyle(document.getElementById('or')).display)
+                if( window.getComputedStyle(document.getElementById('or')).display == "none") {
+                    
+                    is_mobile = true;       
+                }
+
+                //is_mobile to run javascript conditionally
+
+                if (is_mobile == false) {                    
+                    //Conditional script here
+                    VANTA.NET({
+                        el: "#right-box",
+                        mouseControls: true,
+                        touchControls: true,
+                        minHeight: 200.00,
+                        minWidth: 200.00,
+                        scale: 1.00,
+                        scaleMobile: 1.00,
+                        color: 0xe035d9,
+                        // backgroundColor: 0x201533,
+                        points: 16.00,
+                        spacing: 15.00,
+                        maxDistance: 19.00
+                    })        
+            }};
+        </script> -->
+        <!-- <script src="https://kit.fontawesome.com/09bf8ad1ea.js" crossorigin="anonymous"></script> -->
+    </body>
+</html>
